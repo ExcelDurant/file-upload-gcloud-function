@@ -1,18 +1,25 @@
 <img src="https://avatars2.githubusercontent.com/u/2810941?v=3&s=96" alt="Google Cloud Platform logo" title="Google Cloud Platform" align="right" height="96" width="96"/>
 
-# Google Cloud Functions - Hello World sample
 
-See:
+# Deploy and run
 
-* [Cloud Functions Hello World tutorial][tutorial]
-* [Cloud Functions Hello World sample source code][code]
+## Preview
+On my web development journey, one task I come across very often is uploading files(images, videos, etc) and making them accesible by some means to a frontend
 
-[tutorial]: https://cloud.google.com/functions/docs/quickstart
-[code]: index.js
+The uploaded file will generally be made public using a url that is provided after it has been successfully uploaded and stored
 
-## Deploy and run the sample
+## Goal of this project
+"Why should I always re-implement the same functionality across different backends?" I always asked myself. That's why I came up with a simple solution, why not a cloud function? It will be platform/backend agnostic and it doesn't come with all the hassle of setting up a dedicated backend
 
-See the [Cloud Functions Hello World tutorial][tutorial].
+## Why a cloud function?
+I don't know
+
+### Initial steps
+These are the steps I will follow for a beginning. It may change with time and requirements
+- send a post request to the function
+- the request should contain the asset/assets to be stored in base64 format
+- the request may also contain parameters to indicate in which platform/service the assets should be stored (digital-ocean, cloudinary, S3, firebase, gcloud, etc)
+
 
 **Note:** in order for the tests to run properly, you'll have to deploy some of the sample functions:
 
